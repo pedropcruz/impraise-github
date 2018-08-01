@@ -15,10 +15,13 @@
     "yarn": "^1.9.2"
   },
   "scripts": {
-    "start:server": "PORT_SERVER=8000 nodemon server/server.js",
+    "start:server": "nodemon server/server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0"
   }
 }

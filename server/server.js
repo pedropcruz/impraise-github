@@ -2,13 +2,15 @@ const express = require('express');
 const fetch = require('node-fetch');
 const _ = require('lodash');
 const expressGraphQL = require('express-graphql');
+require('dotenv').load();
 
 const app = express();
 
 const NAME = "impraise"
 const port = process.env.PORT_SERVER || 8080;
+
 const url = "https://api.github.com/graphql";
-const access_token = "ac640cb75ede78038d9ff15825386934188ead61";
+const access_token = process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN;
 
 app.use('/organization', (req, res) => {
 	const query = `
@@ -120,5 +122,6 @@ app.use('/repositories', (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log('Start listening server side');
+	console.log(`Start listening server on http://localhost:${port}`);
+	console.log(process.env);
 })

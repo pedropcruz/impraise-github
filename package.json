@@ -1,0 +1,24 @@
+{
+  "name": "impraise-github",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "lodash": "^4.17.10",
+    "node-fetch": "^2.2.0",
+    "nodemon": "^1.18.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "yarn": "^1.9.2"
+  },
+  "scripts": {
+    "start:server": "PORT_SERVER=8000 nodemon server/server.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

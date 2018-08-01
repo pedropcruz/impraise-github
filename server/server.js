@@ -123,5 +123,4 @@ app.use('/repositories', (req, res) => {
 
 app.listen(port, () => {
 	console.log(`Start listening server on http://localhost:${port}`);
-	console.log(process.env);
 })

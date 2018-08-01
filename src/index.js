@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '../node_modules/basscss/css/basscss.min.css';
 import './global.css';
+import './impraise-icons.css';
 import App from './containers/app/app';
 import registerServiceWorker from './registerServiceWorker';
 

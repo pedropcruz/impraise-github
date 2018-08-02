@@ -12,13 +12,18 @@ const port = process.env.PORT_SERVER || 8080;
 const url = "https://api.github.com/graphql";
 const access_token = process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN;
 
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 app.use('/organization', (req, res) => {
 	const query = `
 		query ImpraiseGitHubAccount{
 			organization(login: "${NAME}") {
 				name
 				location
-				url
 				websiteUrl
 			}
 		}

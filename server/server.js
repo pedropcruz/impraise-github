@@ -55,6 +55,7 @@ app.use('/pinned-repositories', (req, res) => {
 					}
 					name
 					description
+					url
 					updatedAt
 					primaryLanguage {
 						color
@@ -98,6 +99,7 @@ app.use('/repositories', (req, res) => {
 					}
 					name
 					description
+					url
 					updatedAt
 					primaryLanguage {
 						color

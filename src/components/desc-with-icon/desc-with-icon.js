@@ -10,7 +10,7 @@ class DescWithIcon extends Component {
 	render() {
 		return (
 			<div className="description">
-				{this.renderIcon()}
+				{this.props.icon ? this.renderIcon() : null}
 				{this.props.link ?
 					<LinkTag hyperlink={this.props.link} desc={this.props.desc}/>
 					:

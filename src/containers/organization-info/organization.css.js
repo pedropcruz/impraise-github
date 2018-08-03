@@ -11,9 +11,11 @@ const OrganizationCSS = styled.section`
 		p,a{
 			font: 400 .9em/1.2em ${vars.fonts.AppleSystem};			
 		}
-		p,
-		i{
+		p,i{
 			color: ${vars.colors.grayColor};
+		}
+		i{
+			font-size: 18px;
 		}
 		a{
 			color: ${vars.colors.linkColor};

@@ -16,7 +16,9 @@ const vars = {
 		"whiteColor": "#FFFFFF",
 		"blackColor": "#2e2d2c",
 		"grayColor": "#778090",
-		"linkColor": "#2074ef"
+		"linkColor": "#2074ef",
+		"grayColorHover": "#f8f8f8",
+		"primaryColor": "#6b7587"
 	},
 	"fonts": {
 		"AppleSystem": "-apple-system,BlinkMacSystemFont,'nSegoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol'"

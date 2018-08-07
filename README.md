@@ -26,6 +26,6 @@ And then you do **update token** and get the id, copy and paste on *.env file* o
 
 On PORT_SERVER, you can choose the port for running server side, to obtain data from github GraphQL API.
 
-And then, do ``` npm run start ``` for running the project! :)
+And then, do ``` npm run start:server ``` for running the backend side of the project, and then do ```npm run start``` to run frontend side! :)
 
 Thanks for this huge project, I have learned a lot, and I know i need to improve some things, but you can share some of your feedback to improve my skills! :)

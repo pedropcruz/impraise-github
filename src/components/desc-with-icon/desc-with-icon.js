@@ -14,7 +14,7 @@ class DescWithIcon extends Component {
 				{this.props.link ?
 					<LinkTag hyperlink={this.props.link} desc={this.props.desc}/>
 					:
-					<p className={(this.props.classes ? this.props.classes : "")} >{this.props.desc}</p>
+					<span className={(this.props.classes ? this.props.classes : "")} >{this.props.desc}</span>
 				}
 			</div>
 		);

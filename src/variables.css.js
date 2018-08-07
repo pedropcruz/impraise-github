@@ -17,6 +17,7 @@ const vars = {
 		"blackColor": "#2e2d2c",
 		"grayColor": "#778090",
 		"linkColor": "#2074ef",
+		"borderColor": "#e1e4e8",
 		"grayColorHover": "#f8f8f8",
 		"primaryColor": "#6b7587"
 	},

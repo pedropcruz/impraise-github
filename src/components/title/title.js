@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Title extends Component{
 	render(){
 
-		const classes = (this.props.classes ? this.props.classes + " title" : "")
+		const classes = (this.props.classes ? this.props.classes : "")
 
 		return(
 			<React.Fragment>

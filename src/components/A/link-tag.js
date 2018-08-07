@@ -1,9 +1,13 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-class LinkTag extends Component{
-	render(){
-		return(
-			<a href={this.props.hyperlink} rel="noreferrer noopener" target="_blank">{this.props.desc}</a>
+class LinkTag extends Component {
+	render() {
+		const classes = (this.props.className ? this.props.className : null)
+		return (
+			<a href={this.props.hyperlink}
+				className={classes}
+				rel="noreferrer noopener"
+				target="_blank">{this.props.desc}</a>
 		)
 	}
 }

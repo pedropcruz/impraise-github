@@ -8,10 +8,10 @@ const OrganizationCSS = styled.section`
 			font-weight: 400;
 			color: ${vars.colors.blackColor};
 		}
-		p,a{
+		span,a{
 			font: 400 .9em/1.2em ${vars.fonts.AppleSystem};			
 		}
-		p,i{
+		span,i{
 			color: ${vars.colors.grayColor};
 		}
 		i{

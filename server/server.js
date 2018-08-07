@@ -92,6 +92,8 @@ app.use('/repositories', (req, res) => {
 				nodes {
 					isFork
 					parent {
+						nameWithOwner
+						url
 						forkCount
 					}
 					forks {
@@ -109,7 +111,7 @@ app.use('/repositories', (req, res) => {
 						totalCount
 					}
 					licenseInfo {
-						name
+						spdxId
 					}
 				}
 			}

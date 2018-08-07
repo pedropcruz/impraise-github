@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PinnedReposCSS from './pinned-repositories.css';
+import RepoItem from '../../components/repo-item/repo-item';
 import _ from 'lodash';
-import PinnedRepoItem from '../../components/pinned-repo-item/pinned-repo-item';
 
 const API = "http://localhost:8000/pinned-repositories";
 
@@ -30,11 +30,14 @@ class PinnedRepos extends Component {
 
 		const repos = this.state.repos;
 
-		if (repos.length > 0) {
+		if (!_.isEmpty(repos)) {
 			return _.map(repos, (value, item) => {
-				return <PinnedRepoItem
+				return <RepoItem
 					key={item}
 					repoInfo={value}
+					showUpdate={false}
+					showForkFrom={false}
+					showMIT={false}
 				/>
 			})
 		}
@@ -42,7 +45,7 @@ class PinnedRepos extends Component {
 
 	render() {
 		return (
-			<PinnedReposCSS className="mt3">
+			<PinnedReposCSS className="mt3 mb4">
 				<h2 className="h2">Pinned repositories</h2>
 				<div className="relative flex flex-row items-start justify-between">
 					{this.getRepositories()}

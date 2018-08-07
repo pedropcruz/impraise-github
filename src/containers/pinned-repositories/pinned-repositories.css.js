@@ -2,17 +2,11 @@ import styled from 'styled-components';
 import vars from '../../variables.css';
 
 const PinnedRepos = styled.section`
-	.h2{
-		color: ${vars.colors.black};
-		font-size: ${vars.measures.bv4};
-		font-weight: 400;
-		margin: 0 0 ${vars.measures.bv7} 0;
-	}
-	.pinnedBox{
+	.repositoryBox{
 		text-decoration: none;
 		color: inherit;
 		position:relative;
-		border: 1px #e1e4e8 solid;
+		border: 1px ${vars.colors.borderColor} solid;
 		border-radius: ${vars.measures.bv0};
 		height: 175px;
 		&:first-child{
